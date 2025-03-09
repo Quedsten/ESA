@@ -1,0 +1,172 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    height: 50px;
+}
+
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+s    padding: 2vw;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.side-image {
+    flex: 1;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    background-color: #ff4d4d;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #cc0000;
+}
+
+.comments {
+    text-align: center;
+}
+
+.comment-container {
+    padding: 20px;
+}
+
+.comment-box {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.team-button {
+    background-color: #222;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.125rem;
+    border-radius: 5px;
+}
+
+.team-button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .side-image {
+        max-width: 80%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .center-content {
+        width: 90%;
+        padding: 5vw;
+    }
+}s

@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.banner-container .left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.banner-container p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.banner-image {
+    width: 300px;
+    height: auto;
+}
+
+.staff-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.activities-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.activity {
+    width: 22%; /* Slightly less than 25% to fit four items evenly */
+    text-align: center;
+    padding: 10px;
+    background: #eaeaea;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.activity img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.activity h1 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.activity h3 {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .activity {
+        width: 30%; /* 3 per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .activity {
+        width: 45%; /* 2 per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .activity {
+        width: 100%; /* 1 per row on small screens */
+    }
+}
