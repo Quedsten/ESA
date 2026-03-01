@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/style4.css">
-    <meta charset="UTF-8">
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Events</title>
+  <link rel="stylesheet" href="../css/style4.css">
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Events</title>
+  <link rel="icon" type="png" href="../photos/logo.PNG">
 </head>
 
 <div class="fade-out-overlay"></div>
@@ -13,14 +14,19 @@
     <div class="nav-container">
       
       <div class="nav-links">
-        <a href="esa.html">Home</a>
-        <a href="events.html">Events</a>
-        <a href="competitive.html">Competition</a>
-        <a href="aboutus.html">About</a>
+        <a href="#">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Competition</a>
+        <a href="#">About</a>
+        <a href="#">Sponsors</a>
 		  <div class="logo-icon"><img src="../photos/logo.PNG" alt="Logo" class="logo"></div>
       </div>
     </div>
   </nav>
+
+
+
+
   <section class="hero">
     <div class="hero-content">
       <h1>Upcoming Events</h1>
@@ -108,6 +114,16 @@
       </div>
     </div>
   </section>
+
+<script>
+function toggleSponsors() {
+    const sponsors = document.getElementById("sponsorsContent");
+    const arrow = document.getElementById("arrow");
+
+    const isCollapsed = sponsors.classList.toggle("collapsed");
+    arrow.textContent = isCollapsed ? "▲" : "▼";
+}
+</script>
 
 <script>
 window.addEventListener("scroll", function() {

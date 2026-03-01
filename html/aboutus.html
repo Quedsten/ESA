@@ -3,27 +3,29 @@
 <head>
     <link rel="stylesheet" href="../css/style1.css">
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>About Us</title>
+    <link rel="icon" type="png" href="../photos/logo.PNG">
 </head>
 
+<body>
+    
 <div class="fade-out-overlay"></div>
 
   <nav class="navbar">
     <div class="nav-container">
       
       <div class="nav-links">
-        <a href="esa.html">Home</a>
-        <a href="events.html">Events</a>
-        <a href="competitive.html">Competition</a>
-        <a href="aboutus.html">About</a>
+        <a href="#">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Competition</a>
+        <a href="#">About</a>
 		  <div class="logo-icon"><img src="../photos/logo.PNG" alt="Logo" class="logo"></div>
       </div>
     </div>
   </nav>
 
 
-<!-- HERO -->
 <section class="hero">
     <div class="hero-grid">
         <div class="hero-left">
@@ -59,13 +61,11 @@
     </div>
 </section>
 
-<!-- STAFF SECTIONS -->
 <section class="staff-wrapper">
 
     <h2 class="section-title">Meet Our Team</h2>
     <p class="section-subtitle">The passionate people behind BEA</p>
 
-    <!-- Executive -->
     <div class="scroll-section">
         <div class="scroll-header">
             <h3 class="scroll-title">Executive Board</h3>
@@ -95,7 +95,6 @@
         </div>
     </div>
 
-    <!-- Committee Chairs -->
     <div class="scroll-section">
         <div class="scroll-header">
             <h3 class="scroll-title">Committee Chairs</h3>
@@ -222,7 +221,7 @@ window.addEventListener("scroll", function() {
 document.addEventListener("DOMContentLoaded", () => {
     const img = document.querySelector(".hero-image");
     img.addEventListener("contextmenu", e => e.preventDefault());
-    img.style.touchAction = "pan-y pinch-zoom"; // allow vertical scroll and pinch
+    img.style.touchAction = "pan-y pinch-zoom";
     let isZoomed = false;
     img.addEventListener("touchstart", e => {
         img.classList.add("zoomed");
